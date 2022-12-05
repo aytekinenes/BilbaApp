@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BilbaApp.ViewModels.NotebookViewModal>
+
+@{
+    ViewData["Title"] = "Notebook Bilgehan Başar";
+}
+
+@foreach(var notebook in Model){
+    <h1>@notebook.Title</h1>
+    <a>@notebook.ImageUrl</a>
+    <p class="m-2">@notebook.Price</p>
+    <p>@notebook.Specs</p>
+}
+
